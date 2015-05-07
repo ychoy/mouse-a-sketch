@@ -11,6 +11,7 @@ table {
 
 td {
   border: 1px dotted #333;
+  /*transition: background-color 300ms ease;*/
 }
 
 input {
@@ -27,6 +28,6 @@ input {
 }*/
 
 /*hover psuedo-class selector example*/
-/*td:hover {
-  background-color: lightgrey;
-}*/
+/*td:hover {*/
+  /*background-color: lightgrey;*/
+/*}*/
