@@ -1,5 +1,13 @@
-console.log("this is a sanity check");
-
 $(document).ready(function(){
-  console.log("Let's get coding!")
+
+  var $colorPicker = $("input"),
+      activeColor = $colorPicker.val();
+  
+  $colorPicker.on("change", function(){
+    activeColor = $colorPicker.val();
+  })
+
+  $("td").on("mouseenter", function(){
+    $(this).css("background-color", activeColor);
+  })
 })
