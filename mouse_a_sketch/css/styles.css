@@ -11,7 +11,11 @@ table {
 
 td {
   border: 1px dotted #333;
-  /*transition: background-color 300ms ease;*/
+  border-radius: 50%;
+  /* Note the transition! */
+  /* This works in concert with the color change triggered by the javascript */
+  transition: background-color 1000ms ease;
+  transition: border-radius 2000ms ease;
 }
 
 input {
@@ -20,14 +24,14 @@ input {
   right: 0;
 }
 
-/* DEMOS */
-
-/*nth-child example*/
-/*tr:nth-child(10) td:nth-child(10) {
-  background-color: red;
-}*/
+/* HOVER DEMO + TRANSITION EFFECT */
 
 /*hover psuedo-class selector example*/
-/*td:hover {*/
-  /*background-color: lightgrey;*/
-/*}*/
+/*Comment out your javascript to see this effect*/
+/*td:hover {
+  background-color: black;
+  transition: background-color 1000ms ease;
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+}*/
