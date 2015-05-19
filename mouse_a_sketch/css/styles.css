@@ -3,7 +3,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 table {
   height: 100vh;
   width: 100vw;
@@ -11,7 +10,9 @@ table {
 
 td {
   border: 1px dotted #333;
-  /*transition: background-color 300ms ease;*/
+  border-radius: 50%;
+  transition: background-color 1000ms ease;
+  transition: border-radius 2000ms ease;
 }
 
 input {
@@ -19,15 +20,3 @@ input {
   bottom:0;
   right: 0;
 }
-
-/* DEMOS */
-
-/*nth-child example*/
-/*tr:nth-child(10) td:nth-child(10) {
-  background-color: red;
-}*/
-
-/*hover psuedo-class selector example*/
-/*td:hover {*/
-  /*background-color: lightgrey;*/
-/*}*/

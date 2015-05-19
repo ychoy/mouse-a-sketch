@@ -8,6 +8,9 @@ $(document).ready(function(){
   })
 
   $("table").on("mouseenter", "td", function(){
-    $(this).css("background-color", activeColor);
+    $(this).css({
+          "background-color": activeColor,
+          "border-radius": "0"
+        });
   })
-})
+});
