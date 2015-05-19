@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  var w = $(window).width();
-  var h = $(window).height();
-
-  buildGrid(w,h);
-
   var $colorPicker = $("input"),
       activeColor = $colorPicker.val();
   
@@ -12,17 +7,23 @@ $(document).ready(function(){
     activeColor = $colorPicker.val();
   });
 
-  $("table").on("mouseenter", "td", function(){
-    $(this).css({
-          "background-color": activeColor,
-          "border-radius": "0"
-    });
+  $("body").on("mousemove", function(event){
+
+      if ($(event.target).is($colorPicker)){
+        return false;
+      }
+
+      var $pixel = $("<div>", {
+          class: "pixel",
+          css: {
+            top: event.pageY,
+            left: event.pageX,
+            background: activeColor
+          }
+      });
+
+      $("body").append($pixel)
+
   });
 
 });
-
-function buildGrid(w,h){
-  var row = "<tr>" + Array(Math.floor(w/10)).join("<td></td>") + "</tr>";
-  var rows = Array(Math.floor(h/10)).join(row);
-  $("table").html(rows)
-}
