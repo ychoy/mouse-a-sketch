@@ -5,12 +5,13 @@ $(document).ready(function(){
   
   $colorPicker.on("change", function(){
     activeColor = $colorPicker.val();
-  })
+  });
 
   $("table").on("mouseenter", "td", function(){
     $(this).css({
           "background-color": activeColor,
           "border-radius": "0"
-        });
-  })
+    });
+  });
+
 });
