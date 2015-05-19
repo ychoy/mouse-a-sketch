@@ -7,7 +7,7 @@ $(document).ready(function(){
     activeColor = $colorPicker.val();
   })
 
-  $("td").on("mouseenter", function(){
+  $("table").on("mouseenter", "td", function(){
     $(this).css("background-color", activeColor);
   })
 })
