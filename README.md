@@ -1,6 +1,6 @@
 # Mouse-A-Sketch
 
-Take a good look at `index.html` and `styles.css` and make sure you understand what both are doing.
+Take a good look at `index.html` and `style.css` and make sure you understand what both are doing. You will be working in `app.js`.
 
 **Goal:**
 
