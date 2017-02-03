@@ -19,14 +19,19 @@ input {
   right: 0;
 }
 
-/* DEMOS */
 
-/*nth-child example*/
-/*tr:nth-child(10) td:nth-child(10) {
+
+/*nth-child example */
+/*
+ tr:nth-child(10) td:nth-child(10) {
   background-color: red;
-}*/
+}
+*/
+
 
 /*hover psuedo-class selector example*/
-/*td:hover {
-  background-color: lightgrey;
-}*/
+
+  td:hover {
+  background-color: #380606;
+}
+
